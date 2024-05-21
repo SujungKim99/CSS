@@ -2,19 +2,16 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "맑은 고딕", sans serif;
   font-size: 14px;
-  color: #333;
+  color: #333333;
 }
-
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   border: none;
 }
@@ -25,29 +22,26 @@ img {
   position: fixed;
   left: 0;
   right: 0;
-  top: 150px;
+  top: 150;
   margin: 0 auto;
   width: 300px;
   height: 300px;
-  border: 1px solid #999;
-  padding: 20px;
+  border: 1px solid #999999;
+  padding: 20;
   box-sizing: border-box;
   background-color: #fff;
   z-index: 6000;
 }
-
 .popup h2 {
-  font-size: 18px;
-  margin: 0 0 10px 0;
-}
-
-.popup p {
-  font-size: 12px;
-  color: #666;
-  line-height: 16px;
+  font-size: 18;
   margin-bottom: 10px;
 }
-
+.popup p {
+  font-size: 12px;
+  color: #666666;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
 .popup a {
   display: block;
   font-size: 12px;
@@ -58,22 +52,21 @@ img {
 .header {
   width: 100%;
   height: 100px;
-  border: 5px 0 0 1px solid #333;
+  border-top: 5px solid #333333;
+  border-bottom: 1px solid #333333;
   box-sizing: border-box;
 }
-
-.header h1 {
-  float: left;
-  width: 400px;
-  height: 100%;
-  padding-top: 26px;
-  box-sizing: border-box;
-}
-
 .wrap {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
+}
+.header h1 {
+  float: left;
+  width: 400px;
+  height: 100%;
+  padding-top: 27px;
+  box-sizing: border-box;
 }
 
 /* gnb */
@@ -82,24 +75,23 @@ img {
   width: 600px;
   height: 100%;
 }
-
 .gnb > ul > li {
   float: left;
   width: 150px;
   height: 94px;
   line-height: 94px;
   text-align: center;
-}
 
+  position: relative;
+}
 .gnb .mainnav {
   font-size: 18px;
   font-weight: bold;
   color: #666;
 }
-.gnb li:hover .mainnavi {
-  color: #333;
+.gnb li:hover .mainnav {
+  color: #333333;
 }
-
 .subnav {
   display: none;
   position: absolute;
@@ -123,8 +115,9 @@ img {
 }
 .subnav a:hover {
   background-color: #ededed;
-  color: #333;
+  color: #333333;
 }
+
 /* main */
 .main {
   width: 1200px;
@@ -145,8 +138,8 @@ img {
   height: 300px;
 }
 
-/*tab */
-.tab {
+/* tap */
+.tap {
   width: 1200px;
   height: 350px;
   margin: 0 auto;
@@ -166,10 +159,10 @@ img {
   height: 50px;
   margin: 0 20px;
 }
-.btn first {
+.btn .first {
   margin-left: 0;
 }
-.btn first:after {
+.btn .first:after {
   content: "|";
   font-size: 20px;
   font-weight: bold;
@@ -177,15 +170,15 @@ img {
   top: -3px;
   left: 20px;
 }
-
 .btn a {
   font-size: 24px;
-  color: #333;
+  color: #999;
   font-weight: bold;
 }
 .btn .active {
-  color: #333;
+  color: #333333;
 }
+
 .best {
   width: 1200px;
   height: 290px;
@@ -222,6 +215,7 @@ img {
 .bwrap a:hover img {
   opacity: 0.5;
 }
+
 /* contents */
 .contents {
   width: 1200px;
@@ -242,10 +236,15 @@ img {
   box-sizing: border-box;
   font-size: 18px;
   font-weight: bold;
-  color: 0.333333;
+  color: #333333;
   line-height: 50px;
 }
-
+.notice li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
 .notice li a {
   float: left;
   display: block;
@@ -254,19 +253,8 @@ img {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 12px;
-}
-
-.notice li .date {
-  float: right;
-  display: block;
-  width: 70px;
-  height: 30px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  font-size: 12px;
   text-align: right;
 }
-
 .banner {
   float: left;
   width: 400px;
@@ -274,7 +262,6 @@ img {
   padding: 5px 20px 0;
   box-sizing: border-box;
 }
-
 .now {
   float: left;
   width: 400px;
@@ -287,9 +274,8 @@ img {
 .footer {
   width: 100%;
   height: 100px;
-  background-color: #333;
+  background-color: #333333;
 }
-
 .footer h1 {
   float: left;
   width: 400px;
@@ -297,7 +283,6 @@ img {
   padding-top: 30px;
   box-sizing: border-box;
 }
-
 .footer p {
   float: left;
   width: 400px;
@@ -306,23 +291,19 @@ img {
   color: #fff;
   text-align: center;
 }
-
 .snsnav {
   float: right;
   width: 400px;
   height: 100px;
   line-height: 100px;
 }
-
 .snsnav ul {
   float: right;
 }
-
 .snsnav li {
   float: left;
   margin: 0 10px;
 }
-
 .snsnav a {
   color: #fff;
 }
